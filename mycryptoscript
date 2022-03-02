@@ -1,0 +1,30 @@
+#!/bin/bash
+#----------------------------------------------------------------------------------------------------
+#
+	name=${name:-"btc"}
+	show_decimal=${show_decimal:-false}
+	var=$(cointop price -c $name)
+
+	if [[ $var = "$"* ]]
+	then
+		if $show_decimal; then		   	
+			echo $var | cut -c 1-6; 
+			echo
+			echo \#00FF00
+		else	
+			echo $var | awk -F "." "{NF=1} 1";
+			echo
+			echo \#00FF00
+		fi	
+	else
+		echo "" 
+	fi
+
+
+	
+	
+	
+	
+	
+	
+	

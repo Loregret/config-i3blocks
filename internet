@@ -1,0 +1,12 @@
+#!/bin/bash
+#----------------------------------------------------------------------------------------------------
+#Check internet connectivity through ping exit code
+if ping -c 1 9.9.9.9 > /dev/null 2>&1; then
+	echo ""; 
+	echo
+	echo \#00FF00
+else
+	echo "";
+	echo
+	echo \#FF0000
+fi
