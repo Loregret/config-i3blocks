@@ -29,16 +29,6 @@ separator_block_width=15
 markup=none
 
 
-[aur-update]
-command=~/.config/i3blocks/aur-update/aur-update
-markup=pango
-format=json
-UPDATE_COLOR=white
-interval=3600
-IGNORE=root loregret
-separator=true
-CACHE_UPDATES=1
-
 # [speedtest]
 # command=~/.config/i3blocks/speedtest/speedtest
 # interval=60
@@ -69,6 +59,17 @@ command=~/.config/i3blocks/mycryptoscript
 label=:
 name="btc"
 interval=3600
+
+
+[aur-update]
+command=~/.config/i3blocks/aur-update/aur-update
+markup=pango
+format=json
+UPDATE_COLOR=white
+interval=3600
+IGNORE=root loregret
+separator=true
+CACHE_UPDATES=1
 
 [volume]
 label= 
@@ -199,7 +200,7 @@ _COLOR_DIRECTIONAL_DOWN=red
 # Internet_ping
 [internet]
 command=~/.config/i3blocks/internet
-interval=18
+interval=3
 # markup=pango
 separator=true
 

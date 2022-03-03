@@ -10,14 +10,16 @@
 		if $show_decimal; then		   	
 			echo $var | cut -c 1-6; 
 			echo
-			echo \#00FF00
+			echo \#A020F0
 		else	
 			echo $var | awk -F "." "{NF=1} 1";
 			echo
-			echo \#00FF00
+			echo \#A020F0
 		fi	
 	else
 		echo "" 
+		echo
+		echo \#A020F0
 	fi
 
 
