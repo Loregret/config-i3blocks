@@ -41,12 +41,12 @@ label=:
 name="xmr"
 interval=3600
 
-[crypto-xrp]
-command=~/.config/i3blocks/mycryptoscript
-label=:
-show_decimal=true
-name="xrp"
-interval=3600
+# [crypto-xrp]
+# command=~/.config/i3blocks/mycryptoscript
+# label=:
+# show_decimal=true
+# name="xrp"
+# interval=3600
 
 [crypto-eth]
 command=~/.config/i3blocks/mycryptoscript
